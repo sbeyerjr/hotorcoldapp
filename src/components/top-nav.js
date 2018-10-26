@@ -4,9 +4,28 @@ import './top-nav.css';
 
 export default function TopNav(props) {
     return (
-        <div className="top-nav">
-        <a href="#what" className="what">WHAT?</a>
-        <a href="#newgame" className="newGame">+ NEW GAME</a>
-        </div>
+        <nav>
+      <ul className="clearfix">
+        <li>
+          <a 
+            href="#what" 
+            className="what"
+            aria-label="How to play"
+          >
+            What?
+          </a>
+        </li>
+        <li>
+          <a
+            href="#feedback"
+            className="new"
+            aria-label="Start a new game"
+            onClick={() => props.onRestartGame()}
+          >
+            + New Game
+          </a>
+        </li>
+      </ul>
+    </nav>
     );
 }

@@ -1,8 +1,28 @@
-.newGame {
+nav {
+    position: relative;
+    height: 10%;
+    padding: 1em;
+  }
+  
+  nav ul li {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+  
+  nav ul li:first-child {
+    float: left;
+  }
+  
+  nav ul li {
     float: right;
-}
-.newGame, .what a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+  }
+  
+  nav a {
+    color: #fff;
+  }
+  
+  .status-link {
+    z-index: 100;
+    top: 60px;
+  }
