@@ -1,0 +1,8 @@
+.newGame {
+    float: right;
+}
+.newGame, .what a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
