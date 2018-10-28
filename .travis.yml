@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: PeVPmQ3c1zcK1+2ux3sYeAIDr5xbKixjAZOngwqYf1EbpRs6ZffM9/VSxToJFYkkBKhwAHshgGMcg2sRlL8CbnHpbGcGQZO7UMta+EA1M+/ryo1Dx1k1tRixG0HR7V+rtH5abEo0eZjrF2rbrMo5uS5EjX+G6CQOotmdTsqHHE5fIWE9imQi7Ie79zO/ReHsUK8DVMnI/kmecbpngY5llvW4aLmG06qVfOxj+a4d3jFe4XHwy+sVyYxSvG/BaWAm/qFR5sQaeTuNbx1TAq4g8orS6oY+YtYjJ2AAGl8OYfE7XP0hLXD86qzoJkKWP00/2wNwtXGbJmYam1ZSoTFw/ktU8CcHUTVGxHZhX5h39Gj070qbFTZqi2wNqSzeXjc/zDDEs3BMfBjVN/TFo6VP8ApQhF0/8WaYYaMOxIAQCE5XD3rc6DfAKOCc0QzlNSnQl8DCNKQb8Ynlge9GzwTN9AyGgfxmofeRDOdozI7m90rmyBSeVyHetYRnrQ1c4TDfRfRSZoJU/bm3mlVl60Ge9gRMEySuRj9HtSGeQA26qNthQs1zICXUnHVI3mpkHW8aNXO1W+/pW15a7Dog8Ghrpb26bm/IPpCSA3/fwyEhPkGoYoPWjiAzLjrkOnPWOA4eELMMIn4PxO4oRj1W8tOwp4clK8/qRcsPuQC8enSE97s=
+  app: afternoon-headland-17084
+  on:
+    repo: sbeyerjr/hotorcoldapp
